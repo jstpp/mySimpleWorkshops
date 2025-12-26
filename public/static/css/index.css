@@ -1,0 +1,81 @@
+.round {
+    margin-left: 3%;
+    margin-right: 3%;
+    width: auto;
+    height: auto;
+    background-color: white;
+    border-radius: 3vmax;
+    overflow: hidden;
+    box-shadow: 0px 0vmax 0.5vmax gray;
+    margin-bottom: 3vmax;
+    font-size: inherit;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.round_header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.round_courses {
+    padding: 2vmax;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 1vmax;
+}
+
+.round_courses div {
+    display: flex;
+    padding: 1vmax;
+    flex-direction: column;
+    background-color: rgb(232, 232, 232);
+    border-radius: 1vmax;
+    box-shadow: 0px 0vmax 0.3vmax gray;
+}
+.round_courses div h2 {
+    text-align: center;
+    margin-top: 0;
+    width: 100%;
+}
+.round_courses div p {
+    text-align: justify;
+}
+
+.round_courses div .button, .fast_actions .button {
+    text-decoration: none;
+    padding: 1vmax;
+    text-align: center;
+    color: black;
+    background-color: rgb(186, 186, 186);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.header_button {
+    margin-top: 1vmax;
+    margin-right: 1vmax;
+    float: right;
+    text-decoration: none;
+    padding: 1vmax;
+    text-align: center;
+    color: black;
+    background-color: rgb(186, 186, 186);
+    transition: 0.3s;
+}
+
+.round_courses div .button:hover, .header_button:hover, .fast_actions .button:hover {
+    background-color: rgb(156, 156, 156);
+}
+
+.round .fast_actions .custom_box_1 {
+    background-color: rgb(232, 232, 232);
+    padding: 1vmax;
+    margin-bottom: 1vmax;
+}
+
+.fast_actions {
+    padding: 2vmax;
+}

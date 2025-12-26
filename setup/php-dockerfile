@@ -1,0 +1,14 @@
+FROM php:8-fpm-alpine
+
+RUN apk add zip libzip-dev unzip linux-headers && docker-php-ext-install pdo_mysql sockets zip && docker-php-ext-enable pdo_mysql
+
+COPY ./ /www/msw/
+RUN chown -R www-data:www-data /www/msw/*
+
+WORKDIR /www/msw/include/modules/composer
+RUN php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
+RUN php composer-setup.php
+RUN php -r "unlink('composer-setup.php');"
+RUN php composer.phar install
+
+WORKDIR /

@@ -1,0 +1,1 @@
+<p style="text-align: center;">mySimpleWorkshops by <a href="https://github.com/jstpp">jstpp</a><br /><small>distributed on MIT license</small></p>
