@@ -1,0 +1,31 @@
+services:
+  mysql:
+    build:
+      dockerfile: ./setup/mysql-dockerfile
+    environment:
+      MYSQL_ROOT_PASSWORD: workshops_db_root
+      MYSQL_DATABASE: workshops_db
+      MYSQL_USER: workshops_db
+      MYSQL_PASSWORD: workshops_db
+
+  php-fpm:
+    build:
+      dockerfile: ./setup/php-dockerfile
+    volumes:
+      - ./:/www/msw/
+      - ./setup/default.conf.example:/etc/nginx/conf.d/default.conf
+      - ./setup/fastcgi-php.conf.example:/etc/nginx/snippets/fastcgi-php.conf
+    depends_on:
+      - mysql
+
+  web:
+    image: nginx:1-alpine
+    ports:
+      - '80:80'
+    volumes:
+      - ./:/www/msw/
+      - ./setup/nginx.conf.example:/etc/nginx/nginx.conf
+      - ./setup/default.conf.example:/etc/nginx/conf.d/default.conf
+      - ./setup/fastcgi-php.conf.example:/etc/nginx/snippets/fastcgi-php.conf
+    depends_on:
+      - php-fpm
