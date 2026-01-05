@@ -8,7 +8,7 @@
 ## Installation
 1. Download repository:
 ```bash
-git clone https://github.com/jstpp/mysimpleworkshops.git && cd mySimpleWorkshops
+git clone https://github.com/jstpp/mysimpleworkshops.git && cd mysimpleworkshops
 ```
 2. Adjust configuration located in `include/config.php`. It would be **necessary to enable Microsoft login**.
 
