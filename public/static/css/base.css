@@ -4,3 +4,11 @@ body {
     font-family: 'Poppins';
     font-size: 1vw;
 }
+@media print {
+    body {
+        visibility: hidden;
+    }
+    .round, #registration_header {
+        visibility: visible;
+    }
+}
