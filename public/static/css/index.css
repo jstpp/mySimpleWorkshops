@@ -63,6 +63,7 @@
     text-align: center;
     color: black;
     background-color: rgb(186, 186, 186);
+    cursor: pointer;
     transition: 0.3s;
 }
 

@@ -1,5 +1,5 @@
 <div class="fast_actions">
-    <a class="button" href="?mode=participants">Pobierz listę uczestników</a>
+    <a class="button" href="?mode=participants">Pokaż listę uczestników</a>
     <a class="button" onClick="document.getElementById('round_add').style.display = 'block';">Dodaj nową turę rejestracji</a>
     <a class="button" id="add_course_button" onClick="document.getElementById('course_add').style.display = 'block';">Dodaj nowe warsztaty</a>
 

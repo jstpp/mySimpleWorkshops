@@ -5,6 +5,7 @@
             echo('<a class="header_button" href="?mode=registration">Panel rejestracji</a>');
         } else {
             if(is_admin()) echo('<a class="header_button" href="?mode=management">Panel zarządzania</a>');
+            if(isset($_GET['mode']) and $_GET['mode']=="participants" and is_admin()) echo('<a class="header_button" onClick="window.print();">Wydrukuj (także do PDF)</a>');
         }
     ?>
     <br style="clear: both;"/>
