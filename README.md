@@ -31,12 +31,12 @@ docker compose -f compose.yaml up
 > [!tip]
 > If You adjusted your config correctly, using admin account You can see special button on the top-right corner of the screen. Use it to enter the management mode.
 
-- Enter the settings to add your first round - after that, You can add new courses to your database. To remove round, You need to remove all courses in mentioned round.
+- Enter the settings to add your first round - after that, You can add new courses to your database. To remove round, You need to remove all courses in mentioned round first.
 - Amount of available seats can be increased by changing max. amount of seats.
 - You can sign in only for one course registered in specified round. Create multiple rounds to allow users to register for multiple courses.
 - If You need admin permissions without adjusting the config file, You can modify this code by using `test_admin()` function in proper line/file/function.
 
-If You need some help, feel free to message me: jstpp@int.pl
+If You need some help, feel free to message me: jstpp_github@proton.me
 
 > [!warning]
 > Remember to test this app before running it for your events.
