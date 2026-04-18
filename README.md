@@ -1,5 +1,9 @@
 # mySimpleWorkshops
-[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
+<p align="center">
+    <img src="https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge" alt="CodeFactor" />
+    <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/jstpp/mySimpleWorkshops?style=for-the-badge">
+    <a href="https://www.codefactor.io/repository/github/jstpp/mySimpleWorkshops"><img src="https://www.codefactor.io/repository/github/jstpp/mySimpleWorkshops/badge?style=for-the-badge" alt="CodeFactor" /></a>
+</p>
 
 `mySimpleWorkshops` - simple site for courses registration created for II LO in Gorzów Wielkopolski (Poland).
 
@@ -13,7 +17,7 @@ git clone https://github.com/jstpp/mysimpleworkshops.git && cd mysimpleworkshops
 2. Adjust configuration located in `include/config.php`. It would be **necessary to enable Microsoft login**.
 
 > [!tip]
-> To enable usage of Microsoft Graph (method of authentication) You need to register your app in proper Microsoft platform. More informations [here](https://learn.microsoft.com/en-us/graph/auth-register-app-v2).
+> To enable usage of Microsoft Graph (method of authentication) You need to register your app in proper Microsoft platform. More information [here](https://learn.microsoft.com/en-us/graph/auth-register-app-v2).
 
 > [!caution]
 > Don't share generated microsoft app credentials with others!
